@@ -1,4 +1,4 @@
-##Email Scheduler (Simple FastAPI project)
+##Email Scheduler (Simple FastAPI project)##
 
 This is a small project I made for a backend assignment.
 The idea was to create an API where you can schedule an email, and when the time comes, the system checks the weather of that location using the Open-Meteo API and then sends a mock email (it just prints it in the terminal, not real mail).
