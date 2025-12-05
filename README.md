@@ -1,11 +1,11 @@
-#Email Scheduler (Simple FastAPI project)
+# Email Scheduler (Simple FastAPI project)
 
 This is a small project I made for a backend assignment.
 The idea was to create an API where you can schedule an email, and when the time comes, the system checks the weather of that location using the Open-Meteo API and then sends a mock email (it just prints it in the terminal, not real mail).
 
 I mainly used FastAPI for the API part and APScheduler to run the background job that checks the schedules every 30 seconds.
 
-##What the project does (in simple words)
+# What the project does (in simple words)
 You can add schedules (email + date + time + timezone + location)
 At the correct time, it fetches the weather and prints the email content
 You can also import schedules from an Excel file
@@ -14,7 +14,7 @@ It keeps simple logs of emails that were “sent”
 Everything is stored in memory (no database)
 That’s pretty much it.
 
-##How to run it
+# How to run it
 Install the required packages:
 pip install -r requirements.txt
 
@@ -36,7 +36,7 @@ DELETE → remove one
 /send-test-email → just prints an email
 /send-logs → shows logs of "sent" emails
 
-##How scheduling works (very simple explanation)
+# How scheduling works (very simple explanation)
 
 The scheduler runs every 30 seconds in the background.
 For each schedule:
